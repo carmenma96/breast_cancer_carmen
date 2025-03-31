@@ -14,7 +14,7 @@ st.title("🧬 Clasificador de Cáncer de Mama")
 shap.initjs()
 
 # Cargar modelo y dataset
-modelo = joblib.load("/Users/carmenmartinarenos/MyCarpetaPython/25/modelo_cancer.pkl")
+modelo = joblib.load("modelo_cancer.pkl")
 data = load_breast_cancer()
 features = data.feature_names
 X = pd.DataFrame(data.data, columns=features)
